@@ -51,6 +51,7 @@ include vendor/orca/config/buildprop_common.mk
 PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock \
+    Trebuchet \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf
