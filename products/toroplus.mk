@@ -1,24 +1,26 @@
 # Inherit AOSP device configuration for toroplus.
 $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
-# Inherit AOKP common bits
-$(call inherit-product, vendor/orca/configs/common.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/orca/config/common.mk)
 
-# Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/tuna
+# Inherit CDMA common stuff
+$(call inherit-product, vendor/orca/config/cdma.mk)
+
+# Toroplus Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/toroplus
 
 # Setup device specific product configuration.
 PRODUCT_NAME := orca_toroplus
-PRODUCT_BRAND := Google
+PRODUCT_BRAND := google
 PRODUCT_DEVICE := toroplus
 PRODUCT_MODEL := Galaxy Nexus
-PRODUCT_MANUFACTURER := Samsung
+PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT=samsung/mysidspr/toroplus:4.0.4/IMM76I/330937:user/release-keys PRIVATE_BUILD_DESC="mysidspr-user 4.0.4 IMM76I 330937 release-keys" BUILD_NUMBER=330937
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT="samsung/mysidspr/toroplus:4.1.1/JRO03U/L700FH05:user/release-keys" PRIVATE_BUILD_DESC="mysidspr-user 4.1.1 JRO03U L700FH05 release-keys"
 
-# Torospr specific packages
-PRODUCT_PACKAGES += \
-    Thinkfree
-
-PRODUCT_COPY_FILES += \
-    vendor/orca/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+# Copy toro specific prebuilt files
+PRODUCT_COPY_FILES +=  \
+    vendor/orca/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/orca/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/orca/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd

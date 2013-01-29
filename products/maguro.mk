@@ -1,14 +1,14 @@
 # Inherit AOSP device configuration for maguro.
 $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 
-# Inherit AOKP common bits
-$(call inherit-product, vendor/orca/configs/common.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/orca/config/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/orca/configs/gsm.mk)
+$(call inherit-product, vendor/orca/config/gsm.mk)
 
-# Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/tuna
+# Maguro Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/maguro
 
 # Setup device specific product configuration.
 PRODUCT_NAME := orca_maguro
@@ -17,11 +17,11 @@ PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=takju BUILD_FINGERPRINT=google/takju/maguro:4.1.1/JRO03C/398337:user/release-keys PRIVATE_BUILD_DESC="takju-user 4.1.1 JRO03C 398337 release-keys" BUILD_NUMBER=398337
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=yakju BUILD_ID=JOP40D BUILD_FINGERPRINT="google/yakju/maguro:4.2.1/JOP40D/533553:user/release-keys" PRIVATE_BUILD_DESC="yakju-user 4.2.1 JOP40D 533553 release-keys" BUILD_NUMBER=533553
 
-# Maguro specific packages
-PRODUCT_PACKAGES += \
-    Thinkfree
+# Copy maguro specific prebuilt files
+PRODUCT_COPY_FILES +=  \
+    vendor/orca/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/orca/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/orca/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
-PRODUCT_COPY_FILES += \
-    vendor/orca/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

@@ -1,23 +1,26 @@
-# Inherit AOSP device configuration for mako
+# Inherit AOSP device configuration for mako.
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
-# Inherit AOKP common bits
-$(call inherit-product, vendor/orca/configs/common.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/orca/config/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/orca/configs/gsm.mk)
+$(call inherit-product, vendor/orca/config/gsm.mk)
 
 # Mako Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/mako
 
-# Setup device specific product configuration
+# Setup device specific product configuration.
 PRODUCT_NAME := orca_mako
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := mako
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:4.2/JOP40C/527662:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.2 JOP40C 527662 release-keys" BUILD_NUMBER=527662
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam TARGET_DEVICE=mako BUILD_FINGERPRINT=google/occam/mako:4.2.1/JOP40D/533553:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.2.1 JOP40D 533553 release-keys"
 
-PRODUCT_COPY_FILES += \
-    vendor/orca/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+# Copy mako specific prebuilt files
+PRODUCT_COPY_FILES +=  \
+    vendor/orca/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/orca/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/orca/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd 

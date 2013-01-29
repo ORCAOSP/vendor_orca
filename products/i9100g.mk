@@ -15,7 +15,7 @@
 #
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/orca/config/gsm.mk)
+$(call inherit-product, vendor/aosp/config/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := GT-I9100G
