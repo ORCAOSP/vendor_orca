@@ -1,14 +1,14 @@
 # Inherit AOSP device configuration for toro.
 $(call inherit-product, device/samsung/toro/full_toro.mk)
 
-# Inherit AOKP common bits
-$(call inherit-product, vendor/orca/configs/common.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/orca/config/common.mk)
 
-# Inherit common Verizon Wireless Files
-$(call inherit-product, vendor/orca/configs/vzw.mk)
+# Inherit CDMA common stuff
+$(call inherit-product, vendor/orca/config/cdma.mk)
 
-# Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/tuna
+# Toro Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/toro
 
 # Setup device specific product configuration.
 PRODUCT_NAME := orca_toro
@@ -17,11 +17,10 @@ PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mysid BUILD_ID=ICL53F BUILD_FINGERPRINT=google/mysid/toro:4.0.2/ICL53F/235179:user/release-keys PRIVATE_BUILD_DESC="mysid-user 4.0.2 ICL53F 235179 release-keys" BUILD_NUMBER=235179
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=yakju BUILD_ID=JOP40C BUILD_FINGERPRINT=google/yakju/toro:4.2/JOP40C/527662:user/release-keys PRIVATE_BUILD_DESC="yakju-user 4.2 JOP40C 527662 release-keys" BUILD_NUMBER=527662
 
-# Toro specific packages
-PRODUCT_PACKAGES += \
-    Thinkfree
-
-PRODUCT_COPY_FILES += \
-    vendor/orca/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+# Copy toro specific prebuilt files
+PRODUCT_COPY_FILES +=  \
+    vendor/orca/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/orca/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/orca/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
