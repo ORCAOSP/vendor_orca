@@ -1,5 +1,9 @@
 Welcome to the AOKP Dictionary (KangDict)...
 
+P.S This is an original commit submitted by Jon Stanford. I found this interesting, this
+    why i committed it to our XY Repo. Another thing is, Khas Mek has added more words. And
+    Fuck your mother pussy is now a great word to use in the AOKP Dictionary. Anywhore, Unicorns.
+
 ###################################################
 # all changes to the word list should be          #
 # accompanied with a binary update                #
@@ -34,7 +38,7 @@ Usage: makedict [-s <unigrams.xml> [-b <bigrams.xml>] [-c <shortcuts_and_whiteli
      such as "robin" and "Robin".
 
 Possible flag usages:
-e = ethnic slur
+e = ?
 n = nouns
 p = pop-culture reference
 r = rude?
