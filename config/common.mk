@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     SuperSU \
+    Microbes \
+    XposedDPI \
+    XposedInstaller \
     ORCAWallpapers \
     ORCASettings \
     Torch 
