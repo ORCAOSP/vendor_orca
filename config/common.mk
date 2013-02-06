@@ -42,7 +42,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Version information used on all builds
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40D BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JOP40G BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
 
 # Build.prop Modifications, Tweaks, blah.
 include vendor/orca/config/buildprop_common.mk
