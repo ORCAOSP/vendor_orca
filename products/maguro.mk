@@ -11,7 +11,7 @@ $(call inherit-product, vendor/orca/configs/gsm.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/tuna
 
 # Setup device specific product configuration.
-PRODUCT_NAME := rootbox_maguro
+PRODUCT_NAME := orca_maguro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
