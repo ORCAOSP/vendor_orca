@@ -16,11 +16,7 @@ PRODUCT_MANUFACTURER := asus
 
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=nakasi BUILD_FINGERPRINT=google/nakasi/grouper:4.2.2/JDQ39/573038:user/release-keys PRIVATE_BUILD_DESC="nakasi-user 4.2.2 JDQ39 573038 release-keys" BUILD_NUMBER=573038
 
-<<<<<<< HEAD
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_ID=JOP40G BUILD_FINGERPRINT=google/nakasi/grouper:4.2.1/JOP40D/533553:user/release-keys PRIVATE_BUILD_DESC="nakasi-user 4.2.1 JOP40D 527662 release-keys" BUILD_NUMBER=533553
-=======
 PRODUCT_COPY_FILES += \
     vendor/orca/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
->>>>>>> 4.2.2 updates
 
 

@@ -12,7 +12,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/s2-common
 
 # Setup device specific product configuration.
 PRODUCT_DEVICE := i9100g
-PRODUCT_NAME := rootbox_i9100g
+PRODUCT_NAME := orca_i9100g
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-I9100G
 
