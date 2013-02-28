@@ -14,4 +14,8 @@ $(LOCAL_DIR)/tilapia.mk \
 $(LOCAL_DIR)/toro.mk \
 $(LOCAL_DIR)/toroplus.mk \
 $(LOCAL_DIR)/n7000.mk \
+$(LOCAL_DIR)/stingray.mk \
+$(LOCAL_DIR)/wingray.mk \
+$(LOCAL_DIR)/crespo.mk \
+$(LOCAL_DIR)/passion.mk \
 $(LOCAL_DIR)/n7100.mk
