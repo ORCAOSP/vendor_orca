@@ -10,13 +10,14 @@ PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     Microbes \
     PerformanceControl \
-    SuperSU \
     Torch 
 
 # Orca Packages
 PRODUCT_PACKAGES += \
     ORCAWallpapers \
     ORCASettings \
+    Superuser \
+    Carbon \
     XposedDPI \
     XposedInstaller
 
