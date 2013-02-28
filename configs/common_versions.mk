@@ -14,7 +14,7 @@ else
 # RootBox Nightlies properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=drewgaren \
-    ro.goo.rom=Orca_nighly \
+    ro.goo.rom=Orca_nightly \
     ro.goo.version=$(DATE) \
     ro.orca.version=ORCA-NIGHTLY-$(TARGET_PRODUCT)-OTA-$(DATE)
 endif
