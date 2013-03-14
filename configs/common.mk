@@ -4,19 +4,26 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/common
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/dictionaries
 
+# SuperUser
+SUPERUSER_EMBEDDED := true
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.orca.superuser
+
 # AOKP Packages
 PRODUCT_PACKAGES += \
     GooManager \
     LatinImeDictionaryPack \
     Microbes \
     PerformanceControl \
-    Torch 
+    Torch \
+    Superuser \
+    su \
+    Torch
 
-# Orca Packages
+# OrcaTools Packages
 PRODUCT_PACKAGES += \
+    OrcaTools \
     ORCAWallpapers \
     ORCASettings \
-    Superuser \
     Carbon \
     XposedDPI \
     XposedInstaller
@@ -30,9 +37,9 @@ PRODUCT_PACKAGES += \
         libcyanogen-dsp \
         LockClock
 
-# Use prebuilt su until fixed when built
-PRODUCT_COPY_FILES += \
-    vendor/orca/prebuilt/common/xbin/su:system/xbin/su
+# Orca build.prop tweaks
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ril.enable.amr.wideband=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -42,12 +49,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
-    windowsmgr.max_events_per_sec=280 \
+    windowsmgr.max_events_per_sec=240 \
     ro.kernel.android.checkjni=0
 
 PRODUCT_COPY_FILES += \
     vendor/orca/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-    vendor/orca/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/orca/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
 
 # init.d

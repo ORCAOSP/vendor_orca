@@ -11,7 +11,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.version=$(DATE) \
     ro.orca.version=ORCA-STABLE-$(TARGET_PRODUCT)-$(ORCA_BUILD)
 else
-# RootBox Nightlies properties
+# Orca Nightlies properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=drewgaren \
     ro.goo.rom=Orca_nightly \

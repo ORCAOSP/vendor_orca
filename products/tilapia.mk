@@ -13,7 +13,7 @@ $(call inherit-product, vendor/orca/configs/gsm.mk)
 # Setup device specific product configuration.
 PRODUCT_NAME := orca_tilapia
 PRODUCT_BRAND := google
-PRODUCT_DEVICE := grouper
+PRODUCT_DEVICE := tilapia
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := Asus
 
@@ -25,3 +25,5 @@ PRODUCT_BUILD_PROP_OVERRIDES +=
 PRODUCT_COPY_FILES += \
     vendor/orca/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
 
+PRODUCT_PACKAGES += \
+    Mms

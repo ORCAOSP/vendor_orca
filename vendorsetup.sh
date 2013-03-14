@@ -1,6 +1,9 @@
 add_lunch_combo orca_d2att-userdebug
 add_lunch_combo orca_d2tmo-userdebug
 add_lunch_combo orca_d2vzw-userdebug
+add_lunch_combo orca_d2cri-userdebug
+add_lunch_combo orca_d2mtr-userdebug
+add_lunch_combo orca_d2spr-userdebug
 add_lunch_combo orca_grouper-userdebug
 add_lunch_combo orca_i605-userdebug
 add_lunch_combo orca_i9100-userdebug
@@ -19,3 +22,17 @@ add_lunch_combo orca_stingray-userdebug
 add_lunch_combo orca_wingray-userdebug
 add_lunch_combo orca_crespo-userdebug
 add_lunch_combo orca_passion-userdebug
+add_lunch_combo orca_manta-userdebug
+add_lunch_combo orca_a510-userdebug
+add_lunch_combo orca_d2usc-userdebug
+add_lunch_combo orca_evita-userdebug
+add_lunch_combo orca_hercules-userdebug
+add_lunch_combo orca_maserati-userdebug
+add_lunch_combo orca_solana-userdebug
+add_lunch_combo orca_spyder-userdebug
+add_lunch_combo orca_su640-userdebug
+add_lunch_combo orca_t0lte-userdebug
+add_lunch_combo orca_targa-userdebug
+add_lunch_combo orca_umtsspyder-userdebug
+add_lunch_combo orca_vs920-userdebug
+

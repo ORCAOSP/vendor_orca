@@ -8,7 +8,7 @@ $(call inherit-product, vendor/orca/configs/common.mk)
 $(call inherit-product, vendor/orca/configs/cdma.mk)
 
 # Toro Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/toro
+PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/tuna
 
 # Setup device specific product configuration.
 PRODUCT_NAME := orca_toro
