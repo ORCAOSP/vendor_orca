@@ -7,14 +7,7 @@ $(call inherit-product, vendor/orca/configs/cdma.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/orca/configs/common.mk)
 
-# Inherit common Verizon Wireless Files
-$(call inherit-product, vendor/orca/configs/vzw.mk)
-
 DEVICE_PACKAGE_OVERLAYS += vendor/orca/overlay/spyder
-
-# AOKP-specific init file for SafeStrap
-PRODUCT_COPY_FILES += \
-    vendor/orca/prebuilt/common/etc/init.local.rc:system/etc/rootfs/init.aokp.rc
 
 # Setup device specific product configuration.
 PRODUCT_NAME := orca_spyder

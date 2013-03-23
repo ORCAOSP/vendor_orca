@@ -4,8 +4,6 @@ $(call inherit-product, vendor/orca/configs/gsm.mk)
 # Release name
 PRODUCT_RELEASE_NAME := evita
 
-TARGET_BOOTANIMATION_NAME := vertical-720x1280
-
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/orca/configs/common.mk)
 

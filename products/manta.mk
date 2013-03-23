@@ -16,5 +16,4 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mantaray BUILD_FINGERPRINT=google/mantaray/manta:4.2.2/JDQ39/573038:user/release-keys PRIVATE_BUILD_DESC="mantaray-user 4.2.2 JDQ39 573038 release-keys" BUILD_NUMBER=573038
 
-PRODUCT_COPY_FILES +=  \
-    vendor/orca/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+change build prop

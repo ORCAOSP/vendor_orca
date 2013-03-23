@@ -13,8 +13,6 @@ add_lunch_combo orca_i9300-userdebug
 add_lunch_combo orca_l900-userdebug
 add_lunch_combo orca_maguro-userdebug
 add_lunch_combo orca_mako-userdebug
-add_lunch_combo orca_n7000-userdebug
-add_lunch_combo orca_n7100-userdebug
 add_lunch_combo orca_tilapia-userdebug
 add_lunch_combo orca_toro-userdebug
 add_lunch_combo orca_toroplus-userdebug
@@ -35,4 +33,4 @@ add_lunch_combo orca_t0lte-userdebug
 add_lunch_combo orca_targa-userdebug
 add_lunch_combo orca_umtsspyder-userdebug
 add_lunch_combo orca_vs920-userdebug
-
+add_lunch_combo orca_p930-userdebug

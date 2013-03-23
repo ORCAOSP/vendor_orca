@@ -7,14 +7,7 @@ $(call inherit-product, vendor/orca/configs/cdma.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/orca/configs/common.mk)
 
-# Inherit common Verizon Wireless Files
-$(call inherit-product, vendor/orca/configs/vzw.mk)
-
-DEVICE_PACKAGE_OVERLAYS += vendor/orca/overlay/targa
-
-# AOKP-specific init file for SafeStrap
-PRODUCT_COPY_FILES += \
-    vendor/orca/prebuilt/common/etc/init.local.rc:system/etc/rootfs/init.aokp.rc
+DEVICE_PACKAGE_OVERLAYS += vendor/orca/overlaytarga
 
 # Setup device specific product configuration.
 PRODUCT_NAME := orca_targa
@@ -39,6 +32,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
    BUILD_UTC_DATE= \
    PRODUCT_DEFAULT_LANGUAGE=en \
    PRODUCT_DEFAULT_REGION=US \
-
 
 
