@@ -25,6 +25,10 @@ PRODUCT_PACKAGES += \
     ORCAWallpapers \
     ORCASettings \
     Carbon \
+    WebViewDream \
+    LunarUI \
+    GoogleKeep \
+    ThemeChooser \
     XposedDPI \
     XposedInstaller
 
@@ -33,7 +37,7 @@ PRODUCT_PACKAGES += \
         Apollo \
         CMFileManager \
         audio_effects.conf \
-	DSPManager \
+	    DSPManager \
         libcyanogen-dsp \
         LockClock
 
@@ -60,7 +64,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/orca/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
     vendor/orca/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
+    vendor/orca/prebuilt/common/etc/init.d/00orca:system/etc/init.d/00orca \
     vendor/orca/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/orca/prebuilt/common/etc/init.d/02cleaning:system/etc/init.d/02cleaning \
+    vendor/orca/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/orca/prebuilt/common/etc/init.d/88zipalign:system/etc/init.d/88zipalign \
+    vendor/orca/prebuilt/common/etc/init.d/97battery:system/etc/init.d/97battery \
+    vendor/orca/prebuilt/common/etc/init.d/98fruit:system/etc/init.d/98fruit \
+    vendor/orca/prebuilt/common/etc/init.d/99Orca_Tweaks:system/etc/init.d/99Orca_Tweaks \
+    vendor/orca/prebuilt/common/etc/init.d/99rngd:system/etc/init.d/99rngd \
     vendor/orca/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/orca/prebuilt/common/bin/sysinit:system/bin/sysinit
 
