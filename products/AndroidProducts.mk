@@ -33,5 +33,4 @@ $(LOCAL_DIR)/t0lte.mk \
 $(LOCAL_DIR)/umtsspyder.mk \
 $(LOCAL_DIR)/vs920.mk \
 $(LOCAL_DIR)/p930.mk \
-$(LOCAL_DIR)/passion.mk \
-$(LOCAL_DIR)/n7100.mk
+$(LOCAL_DIR)/passion.mk 
