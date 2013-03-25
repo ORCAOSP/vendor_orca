@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += \
     WebViewDream \
     LunarUI \
     GoogleKeep \
-    ThemeChooser \
+    JRThemes \
     XposedDPI \
     XposedInstaller
 
