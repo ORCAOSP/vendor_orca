@@ -3,7 +3,7 @@ $(call inherit-product, device/moto/wingray/full_wingray.mk)
 $(call inherit-product, vendor/orca/configs/common_tablet.mk)
 
 # xoom Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/common_tablet
+PRODUCT_PACKAGE_OVERLAYS += vendor/orca/overlay/xoom
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := orca_wingray
